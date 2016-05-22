@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acercade">Acerca de</string>
+    <string name="acercade_nombre">Javier Núñez</string>
+    <string name="acercade_titulo">Software Creator</string>
+    <string name="acercade_subtitulo">Market Research Automotive</string>
+    <string name="acercade_link">https://es.linkedin.com/in/januan</string>
+    <string name="pide_email">Introduce email</string>
+    <string name="pide_nombre">Introduce tu nombre</string>
+    <string name="pide_mensaje">Introduce tu mensaje</string>
+    <string name="enviar_comentario">Enviar Comentario</string>
+
+
+
+    <!-- OTHER -->
+    <string name="show_on_github">Show on GitHub</string>
+    <string name="pay_me_a_beer">Pay me a beer</string>
+    <string name="offer_me_a_beer">Offer me a beer if that application have helped you to reward me.</string>
+</resources>

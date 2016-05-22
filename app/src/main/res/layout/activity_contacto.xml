@@ -70,7 +70,7 @@
         android:text="@string/enviar_comentario"
         android:textSize="@dimen/txt_boton_enviar"
         android:background="@color/colorAccent"
-        android:onClick="enviarComentarios"
+        android:onClick="enviaEmail"
         />
 
 </RelativeLayout>

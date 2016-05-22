@@ -14,6 +14,7 @@ import javax.mail.*;
 import javax.mail.internet.*;
 import javax.activation.*;
 import com.javiernunez.puppies.R;
+import com.javiernunez.puppies.mail.SendMail;
 
 import java.util.Date;
 import java.util.Properties;
@@ -35,6 +36,20 @@ public class contacto extends AppCompatActivity {
 
     }
 
+    public void enviaEmail(View v){
+        EditText etEmail = (EditText) findViewById(R.id.etEmail);
+        EditText etNombre = (EditText) findViewById(R.id.etNombre);
+        EditText etMensaje = (EditText) findViewById(R.id.etMensaje);
+
+        Toast.makeText(getBaseContext(), " Tu : " + etNombre.getText()  + " con mail : " + etEmail.getText()
+                        + " Enviaste el mensaje: " + etMensaje.getText()
+                , Toast.LENGTH_LONG).show();
+        //Creating SendMail object
+        SendMail sm = new SendMail(this, etEmail.getText().toString().trim(),
+                etNombre.getText().toString().trim(), etMensaje.getText().toString().trim());
+        //Executing sendmail to send email
+        sm.execute();
+    }
 
     public void enviarComentarios(View v) throws AddressException {
 
